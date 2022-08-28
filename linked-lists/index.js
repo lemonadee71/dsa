@@ -69,10 +69,11 @@ class LinkedList {
     if (idx === 0) return node; // quick fix
 
     let i = 0;
+    const index = idx < 0 ? this.size + idx : idx;
     do {
       node = node.nextNode;
       i++;
-      if (i === idx) return node;
+      if (i === index) return node;
     } while (node.nextNode !== null);
 
     return null;

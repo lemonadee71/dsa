@@ -57,6 +57,14 @@ describe('LinkedList', () => {
     expect(list.at(10)).toBe(null);
   });
 
+  it('at: works with negative values', () => {
+    list.prepend(-1).append(1).append(3).append(2);
+
+    expect(list.at(-1).value).toBe(2);
+    expect(list.at(-3).value).toBe(1);
+    expect(list.at(-10)).toBe(null);
+  });
+
   it('find: get index of a certain value', () => {
     list.prepend(-1).append(1).append(3).append(2);
 
