@@ -66,14 +66,16 @@ class LinkedList {
 
   at(idx) {
     let node = this.head;
+    if (idx === 0) return node; // quick fix
+
     let i = 0;
-
-    while (i !== idx) {
-      i++;
+    do {
       node = node.nextNode;
-    }
+      i++;
+      if (i === idx) return node;
+    } while (node.nextNode !== null);
 
-    return node;
+    return null;
   }
 
   find(value) {

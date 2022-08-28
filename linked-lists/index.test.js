@@ -51,8 +51,10 @@ describe('LinkedList', () => {
   it('at: get value at a certain index', () => {
     list.prepend(-1).append(1).append(3).append(2);
 
-    expect(list.at(1).value).toBe(0);
+    expect(list.at(0).value).toBe(-1);
     expect(list.at(3).value).toBe(3);
+    expect(list.at(4).value).toBe(2);
+    expect(list.at(10)).toBe(null);
   });
 
   it('find: get index of a certain value', () => {
