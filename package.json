@@ -1,0 +1,23 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "My implementation of data structures and algorithms in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lemonadee71/dsa.git"
+  },
+  "author": "Shin Andrei R. Riego",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lemonadee71/dsa/issues"
+  },
+  "homepage": "https://github.com/lemonadee71/dsa#readme",
+  "devDependencies": {
+    "jest": "^29.0.1"
+  }
+}
